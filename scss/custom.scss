@@ -90,6 +90,10 @@ section {
     }
 }
 
+.caption-bg{
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
 @media (max-width: 991px) {
 
     section {

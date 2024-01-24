@@ -11935,6 +11935,10 @@ section {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.caption-bg {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
 @media (max-width: 991px) {
   section {
     padding-top: 250px;
