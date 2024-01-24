@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Candy hotel</title>
+</head>
+
+<body>
+    <section id="home" class="d-flex justify-content-center align-items-center">
+        <div id="overlay"></div>
+        <div id="introduction" class="container border-rounded text-white text-center">
+            <h1 class="display-1 mt-5 mb-0">Candy Hills
+            </h1>
+            <h3 class="display-6 mb-5 text-primary">HOTEL</h3>
+            <div id="quickBook" class="p-3">
+                <form>
+                    <h3 class="text-center mb-1 text-secondary">Quick booking</h3>
+                    <div class="col my-2">
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" class="form-control" placeholder="Johnny">
+                    </div>
+                    <div class="col my-2">
+                        <label for="surname">Surname: </label>
+                        <input type="text" id="surname" class="form-control" placeholder="English">
+                    </div>
+                    <div class="col my-2">
+                        <label for="mail">Email: </label>
+                        <input type="email" id="mail" class="form-control" placeholder="johnnyenglish@example.com">
+                    </div>
+                    <div class="col my-2">
+                        <label for="phone">Phone number: <span class="text-white-50">(incl. international dial-up
+                                preference)</span></label>
+                        <input type="phone" id="phone" class="form-control" placeholder="+421606123456">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 my-2">
+                            <label for="guests">Number of guests: </label>
+                            <input type="number" id="guests" class="form-control" value="1">
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <label for="dateArr">Date of arrival: </label>
+                            <input type="date" id="dateArr" class="form-control mx-auto" placeholder="01/01/2021">
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <label for="dateDp">Date of departure: </label>
+                            <input type="date" id="dateDp" class="form-control mx-auto" placeholder="01/01/2021">
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-md-6 my-2">
+                        <input type="submit" value="Book now" class="col-md-6 btn btn-outline-secondary w-100">
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <button id="virtual" class="col-md-6 btn btn-primary w-100" data-bs-toggle="modal"
+                            data-bs-target="#virtualTour">Virtual tour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span class="display-5 ml-20">Candy Hills</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#history">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="history">
+        <div class="container text-center mt-3 p-3 container-bg">
+            <h1 class="heading">History</h1>
+            <div class="row mt-3">
+                <div class="col-md-6 col-lg-3">
+                    <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit amet molestias,
+                        omnis quisquam illum voluptas commodi hic quibusdam repellat vitae necessitatibus expedita ad
+                        dolores. Ipsam nostrum dolore aliquid vel dolorum suscipit facilis, nobis eligendi magnam iure
+                        recusandae quia quas repudiandae nulla est ullam tempore consequuntur eius nemo? Amet, nisi
+                        fugit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis laborum optio cupiditate.
+                        Iusto cum, aliquid veritatis ducimus architecto asperiores vitae consectetur ipsam optio, ipsum
+                        maiores suscipit in autem consequatur quisquam. Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Quaerat, nemo molestias quas sunt consequatur ex aliquid ducimus provident
+                        totam ad obcaecati tenetur nulla maxime quisquam dicta necessitatibus beatae ullam id, rem
+                        deserunt harum corrupti quia? Voluptate rem sit mollitia omnis aliquam. Ratione, commodi vero
+                        quod fugit voluptatum est iusto quos.</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui provident
+                        facilis, atque quaerat ipsum esse labore dolore harum culpa laborum ducimus mollitia aliquid
+                        maxime assumenda tempore non praesentium eligendi est modi impedit nobis minima facere.
+                        Perspiciatis sapiente distinctio, ipsa, accusamus aut earum voluptas, sunt magni libero
+                        doloremque minus sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+                        facilis voluptatem fuga tempore, architecto inventore cum corrupti, asperiores delectus quod
+                        omnis. Consectetur optio repellendus aliquid eligendi amet consequatur quisquam aliquam. Lorem
+                        ipsum dolor sit, amet consectetur adipisicing elit. Praesentium recusandae cumque nemo
+                        repudiandae perferendis iusto minus consequuntur saepe quod vero? Porro culpa, iure nostrum
+                        deserunt deleniti quaerat neque cum, voluptatum distinctio aut dicta voluptatem ut dolor, modi
+                        fugiat non architecto possimus perspiciatis. Ipsum, repudiandae! Veniam dolor beatae atque velit
+                        natus!</p>
+                </div>
+                <div class="d-none d-md-inline col-md-12 col-lg-6">
+                    <img src="img/history.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing">
+        <div class="container text-center mt-3 p-3 container-bg">
+            <h1 class="heading">Prices</h1>
+            <div class="row my-3">
+                <div class="col-md-6 col-xl-3 p-3">
+                    <div class="card">
+                        <img src="./img/1.png" class="card-image-top w-100 h-auto">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Economy</h3>
+                            <table class="table">
+                                <tr>
+                                    <th>Pers.</th>
+                                    <th>Night</th>
+                                    <th>Week</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>35€</td>
+                                    <td>210€</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>40€</td>
+                                    <td>240€</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>45€</td>
+                                    <td>270€</td>
+                                </tr>
+                            </table>
+                            <a href="#" class="btn btn-lg btn-primary text-white" data-toggle="tooltip"
+                                data-placement="bottom" title="Don't hesitate">BOOK</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 p-3">
+                    <div class="card">
+                        <img src="./img/2.png" class="card-image-top w-100 h-auto">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Standard</h3>
+                            <table class="table">
+                                <tr>
+                                    <th>Pers.</th>
+                                    <th>Night</th>
+                                    <th>Week</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>50€</td>
+                                    <td>300€</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>55€</td>
+                                    <td>330€</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>60€</td>
+                                    <td>360€</td>
+                                </tr>
+                            </table>
+                            <a href="#" class="btn btn-lg btn-primary text-white" data-toggle="tooltip"
+                                data-placement="bottom" title="Don't hesitate">BOOK</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 p-3">
+                    <div class="card">
+                        <img src="./img/3.png" class="card-image-top w-100 h-auto">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Deluxe</h3>
+                            <table class="table">
+                                <tr>
+                                    <th>Pers.</th>
+                                    <th>Night</th>
+                                    <th>Week</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>65€</td>
+                                    <td>420€</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>70€</td>
+                                    <td>450€</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>75€</td>
+                                    <td>480€</td>
+                                </tr>
+                            </table>
+                            <a href="#" class="btn btn-lg btn-primary text-white" data-toggle="tooltip"
+                                data-placement="bottom" title="Don't hesitate">BOOK</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 p-3">
+                    <div class="card">
+                        <img src="./img/4.png" class="card-image-top w-100 h-auto">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Superior</h3>
+                            <table class="table">
+                                <tr>
+                                    <th>Pers.</th>
+                                    <th>Night</th>
+                                    <th>Week</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>80€</td>
+                                    <td>540€</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>85€</td>
+                                    <td>570€</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>90€</td>
+                                    <td>600€</td>
+                                </tr>
+                            </table>
+                            <a href="#" class="btn btn-lg btn-primary text-white" data-toggle="tooltip"
+                                data-placement="bottom" title="Don't hesitate">BOOK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="container text-center mt-3 p-3 container-bg">
+            <h1 class="heading">Gallery</h1>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Economy"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Standard"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Deluxe"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Superior"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/1.png" class="d-block w-100" alt="economy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/2.png" class="d-block w-100" alt="standard">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/3.png" class="d-block w-100" alt="deluxe">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/4.png" class="d-block w-100" alt="superior">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container text-center mt-3 p-3 container-bg">
+            <h1 class="heading">Contact us</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.638112188328!2d14.543096076734484!3d47.88533336868786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4773d345a70fffe3%3A0x891609d68bb76528!2sDonatistra%C3%9Fe%2045%2C%204463%20Gro%C3%9Framing%2C%20Rakousko!5e0!3m2!1scs!2scz!4v1706085823214!5m2!1scs!2scz"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-4 text-centre text-success display-3">
+                    <div class="row"><a href=""><i class="bi bi-facebook"></i></a></div>
+                    <div class="row"><a href=""><i class="bi bi-twitter-x"></i></a></div>
+                    <div class="row"><a href=""><i class="bi bi-instagram"></i></a></div>
+                </div>
+                <div class="col-md-4 text-left text-white-50 h5">
+                    <p><i class="bi bi-telephone-fill"></i><br>+3585691111</p>
+                    <p><i class="bi bi-envelope-at-fill"></i><br>candyhills@hotels.at</p>
+                    <p><i class="bi bi-house-door-fill"></i><br>
+                        Donatistraße 45<br>Großraming<br>4463<br>Österreich
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container text-center mt-3 p-3 container-bg">
+            <p>
+                &copy;veetek 2024
+            </p>
+        </div>
+    </section>
+    <div class="modal" id="virtualTour" tabindex="-1" aria-labelledby="virtualTourLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title" id="virtualTourLabel">Exploring...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-primary">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/T7SIxJOoQd8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer bg-primary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            //navbar
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const collapseNavbar = function () {
+                // Ověříme, zda je navigační menu v rozbalovacím režimu
+                if (window.innerWidth < 992) {
+                    const bsCollapse = new bootstrap.Collapse(navbarToggler.nextElementSibling, {
+                        toggle: false
+                    });
+                    bsCollapse.hide();
+                }
+            };
+            // nextElementSibling je JavaScriptová vlastnost, která vrátí element, který je bezprostředně 
+            // následující sourozencem daného elementu v DOM stromu. V tomto případě hledáte element, 
+            // který je hned za navbarToggler v HTML struktuře. V kontextu Bootstrap navigace, tento element 
+            // obvykle reprezentuje rozbalovací část navigační lišty. Pak vytváříte instanci 
+            // Bootstrap Collapse komponenty pro tento element, kterou pak můžete programově skrýt.
+            
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', collapseNavbar);
+            });
+            //modal
+            document.querySelectorAll('.modal').forEach(function (modal) {
+                modal.addEventListener('hide.bs.modal', function () {
+                    const memory = this.innerHTML;
+                    this.innerHTML = memory;
+                });
+            });
+            //Vysvětlení:
+
+            // document.querySelectorAll('.modal').forEach(function(modal) {...}): 
+            // Vybere všechny elementy s třídou modal a pro každý z nich provede funkci uvedenou v těle forEach.
+
+            // modal.addEventListener('hide.bs.modal', function() {...}): Přidává posluchače událostí pro každé modální okno, 
+            // který reaguje na událost hide.bs.modal - událost specifickou pro Bootstrap, která nastane, když se modální okno začíná skrývat.
+
+            // var memory = this.innerHTML; this.innerHTML = memory;: Ukládá aktuální HTML obsah modálního okna do proměnné memory a 
+            // poté ho okamžitě nastavuje zpět. Toto zachovává aktuální stav modálního okna, i když je skryto.
+        });
+    </script>
+</body>
+
+</html>
