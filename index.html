@@ -400,17 +400,18 @@
                     const memory = this.innerHTML;
                     this.innerHTML = memory;
                 });
-                //Vysvětlení:
-
-                // document.querySelectorAll('.modal').forEach(function(modal) {...}): 
-                // Vybere všechny elementy s třídou modal a pro každý z nich provede funkci uvedenou v těle forEach.
-
-                // modal.addEventListener('hide.bs.modal', function() {...}): Přidává posluchače událostí pro každé modální okno, 
-                // který reaguje na událost hide.bs.modal - událost specifickou pro Bootstrap, která nastane, když se modální okno začíná skrývat.
-
-                // var memory = this.innerHTML; this.innerHTML = memory;: Ukládá aktuální HTML obsah modálního okna do proměnné memory a 
-                // poté ho okamžitě nastavuje zpět. Toto zachovává aktuální stav modálního okna, i když je skryto.
             });
+            //Vysvětlení:
+
+            // document.querySelectorAll('.modal').forEach(function(modal) {...}): 
+            // Vybere všechny elementy s třídou modal a pro každý z nich provede funkci uvedenou v těle forEach.
+
+            // modal.addEventListener('hide.bs.modal', function() {...}): Přidává posluchače událostí pro každé modální okno, 
+            // který reaguje na událost hide.bs.modal - událost specifickou pro Bootstrap, která nastane, když se modální okno začíná skrývat.
+
+            // var memory = this.innerHTML; this.innerHTML = memory;: Ukládá aktuální HTML obsah modálního okna do proměnné memory a 
+            // poté ho okamžitě nastavuje zpět. Toto zachovává aktuální stav modálního okna, i když je skryto.
+
 
 
             //tooltip
